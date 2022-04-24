@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- An SPA:; single page application -->
+<!-- ng-app means that this is an AngularJS app -->
+<html lang="en" ng-app="try">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Try Angular 1.5.8</title>
+    <!-- <script src="./js/angular.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="./js/app/app.module.js"></script>
+    <script src="./js/app/app.config.js"></script>
+    <style>
+        .new-class {
+            font-size: 72px;
+        }
+        .other-class {
+            font-size: 32px;
+        }
+        .new-class2 {
+            font-size: 120px;
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- the following module can synchronize your input and the website display! -->
+    <!-- <h1>Hello, {{ name }}!</h1> -->
+    <h1 class="new-class" ng-class="{'other-class': 'Jason', 'new-class2': font==120}">
+        Hello, 
+        <!-- if the name exists, put the name, otherwise, put World -->
+        <span ng-if="name">{{name}}</span>
+        <span ng-if="!name">World</span>
+        !
+    </h1>
+    <input type="text" ng-model="name" />
+
+    <input type="text" ng-model="font" placeholder="font" />
+  </body>
+
+</html>
