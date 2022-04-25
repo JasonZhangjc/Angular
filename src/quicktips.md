@@ -1,3 +1,3 @@
-'python -m http.server' in Windows
+'python -m http.server --bind localhost' in Windows solves the http.server problems!
 
-visit 'localhost:8000' in Chrome
+visit 'http://127.0.0.1:8000/src/' in Chrome
