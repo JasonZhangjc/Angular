@@ -8,7 +8,9 @@ angular.module('blogList').
         // template: "<div class=''><h1 class='new-class'>{{ title }}</h1><button ng-click='someClickTest()'>Click me!</button></div>",
         // The following is the external template!
         templateUrl: './templates/blog-list.html',
-        controller: function($scope){
+        controller: function($routeParams, $scope){
+            console.log($routeParams);
+
             var blogItems = [
                 {title: "Alphabet 1", id: 1, description: "This is a book", publishDate: "2016-07-24"},
                 {title: "Alphabet 2", id: 2, description: "This is a book", publishDate: "2016-07-25"},

@@ -4,17 +4,22 @@
 <html lang="en" ng-app="try">
 
   <head>
+    <!-- We need a base tag for routing! -->
+    <base href="/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Try Angular 1.5.8</title>
+
     <!-- <script src="./js/angular.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.js"></script>
 
-    <script src="./js/app/app.module.js"></script>
-    <script src="./js/app/app.config.js"></script>
-    <script src="./js/app/blog-list/blog-list.module.js"></script>
-    <script src="./js/app/blog-list/blog-list.component.js"></script>
+    <script src="/js/app/app.module.js"></script>
+    <script src="/js/app/app.config.js"></script>
+    <script src="/js/app/blog-list/blog-list.module.js"></script>
+    <script src="/js/app/blog-list/blog-list.component.js"></script>
 
     <style>
         .new-class {
@@ -51,7 +56,11 @@
     </div> -->
 
     <!-- blog-list matches blogList in blog-list.component.js -->
-    <blog-list></blog-list>
+    <!-- <blog-list></blog-list> -->
+    <h1>Us</h1>
+    <div ng-view></div>
+
+    
 
   </body>
 

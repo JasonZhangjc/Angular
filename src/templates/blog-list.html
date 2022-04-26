@@ -1,14 +1,15 @@
-<div class=''>
+<!-- <div class=''>
     <h1 class='new-class'>{{ title }}</h1>
     <button ng-click='someClickTest()'>Click me!</button>
 </div>
 
-{{ items }}
+{{ items }} -->
 <h1>Blog List</h1>
 <ul ng-if="items.length > 0">
     <!-- Use ng-repeat to go over each item in the items -->
     <li ng-repeat = 'item in items'>
-        <a href="/blog/{{ item.id }}">{{ item.title }} {{ item.publishDate }}</a><li>
+        <a ng-href="/blog/{{ item.id }}"/>{{ item.title }} {{ item.publishDate }}</a>
+    <li>
 
 </ul>
 
